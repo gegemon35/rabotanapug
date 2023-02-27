@@ -1,0 +1,15 @@
+html(lang="en")
+  head
+    title Node js Pug
+    meta(charset="utf-8")
+  body
+    block nav
+      ul
+        li Home
+        li About
+        li Contacts
+    block content
+    block footer
+    include includes/_list.pug
+    +button('Cancel', 'red')
+    +button('Send')

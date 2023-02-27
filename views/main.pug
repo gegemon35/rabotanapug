@@ -1,0 +1,35 @@
+-var title = 'New greetings from Pug'
+
+html(lang="en")
+  head
+    link(rel="stylesheet", href="style.css", type="text/css")
+    title Node js Pug
+    meta(charset="utf-8")
+  body
+    //- h1 #{title}
+    //- ol
+    //-   each vl, index in ['One', 'Two', 'Three']
+    //-     li #{vl} (#{index})
+    //- h1= "Add a movie!"
+    //- form(action="/new_movie" method="POST")
+    //- p Почта:
+    //-   input(type="text" name="title" placeholder="" class="but")
+    //- p Пароль:
+    //-   input(type="password" name="" placeholder="" class="but")
+    //- input(type="submit")
+.background
+form
+  h3 Вход в аккаунт
+  label(for='username') Почта
+  input#username(type='text', placeholder='Email  ')
+  label(for='password') Пароль
+  input#password(type='password', placeholder='Password')
+  .con
+    input.check(type ='checkbox') 
+    p.conp запомнить меня  
+  button Войти
+  br
+  br
+  hr.hrr
+  br
+  img.cart(src='gr.png')
